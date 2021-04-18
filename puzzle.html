@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="puzzlecss.css" >
+ <!--<script src="Exercise2.js"></script>-->
+<title>Let's do some puzzles!</title>
+</head>
+
+<body onload="greet()" >
+<script src = "puzzlescript.js"> </script>
+<!-- A introduction of the quiz.-->
+<div>
+<h1>Detective Puzzles</h1>
+<p style="color: white;">There are some very easy questions about detective cases.</p>
+</div>
+
+<!-- the quiz.-->
+<form action="",method="post">
+<fieldset>
+<legend>Detective puzzles</legend>
+
+<!--part1-->
+<fieldset>
+<h3 style="color: white; text-align:center;">Single choice（20分/题）</h3>
+<div id="grey">
+<fieldset class ="question">
+<p id="1">Qeustion 1: 乔治·史密斯在星期日晚上被谋杀了。家里有5个人：史密斯的妻子，他的私人厨师，一个管家，一个女佣，一个园丁。他们都告诉史蒂文斯侦探那天晚上他们在做什么：
+史密斯太太在壁炉旁读着一本书。厨师正在做早餐。管家正在向起居室里的工人们做指示。女仆在洗盘子。园丁正在给温室里的植物浇水。在所有的谈话之后，侦探逮捕了凶手。凶手是谁？</p>
+<label><input type="radio" name="answer1" value="20"/>厨师</label>
+<br />
+<label ><input type="radio" name="answer1"  value="0"/>史密斯太太</label>
+<br/>
+<label ><input type="radio" name="answer1" value="0"/>管家</label>
+<br/>
+<label ><input type="radio" name="answer1"  value="0"/>女仆</label>
+<br/>
+<label ><input type="radio" name="answer1"  value="0"/>园丁</label>
+</fieldset>
+
+<fieldset class ="question">
+<p id="2">Qeustion 2: 侦探正在候诊室对一位医生说话，这时一个惊愕的男子冲了进来，尖叫起来：“有人枪杀了我的妻子！”
+侦探叫那人把一切都告诉他。克拉克先生说他正在上班，这时他的管家给他打电话说他妻子发生了可怕的事情，并且她在重症监护室。他立即挂断电话去医院。侦探立马推理出了凶手。请问凶手是？</p>
+<label><input type="radio" name="answer2" value="0" />管家</label>
+<br />
+<label id="2"><input type="radio" name="answer2" value="0" />妻子自己<label>
+<br/>
+<label><input type="radio" name="answer2" value="20"/>克拉克先生</label>
+</fieldset>
+
+<fieldset class ="question">
+<p id="3">Qeustion 3:一个百万富翁在家里被枪击中前额而死。侦探对百万富翁的3个儿子杰克、约翰和杰姆斯谈了话，他们都在家里。
+杰克说，那天晚上，他、约翰和他们的父亲曾经在一个正式的招待会上。他们回到家后，走进客厅：他父亲首先进入，然后是约翰和杰克。当他们的父亲走上楼梯时，杰姆斯走进客厅，向他们的父亲开枪。
+约翰证实了杰克的信息。杰姆斯说那天晚上他去拜访了他的朋友。当他到家时，他的父亲已经死了。侦探立即明白了一切。请问谁是凶手？ </p>
+<label id="3"><input type="radio" name="answer3" value="20" />杰克和约翰</label>
+<br />
+<label><input type="radio" name="answer3" value="0"/>杰姆斯</label>
+</fieldset>
+
+<fieldset class ="question">
+<p id="4">Qeustion 4:侦探曾经找到一个逃跑的囚犯。他知道这个罪犯躲在这些房子的其中之一。但他必须知道确切的地址，以免吓跑罪犯。首先，他在无人机的帮助下拍了一张房子的照片。
+当他看着照片时，他意识到罪犯在哪里。那个逃犯在哪里？ </p>
+<div style="text-align: center;">
+<img src="picture1.jpeg" width="300" height="300">
+</div>
+<br/>
+<label id="4"><input type="radio" name="answer4" value="20"/>A房</label>
+<br/>
+<label><input type="radio" name="answer4" value="0"/>B房</label>
+<br/>
+<label><input type="radio" name="answer4" value="0"/>C房</label>
+</fieldset>
+
+<fieldset class ="question">
+<p id="5">Qeustion 5:玛丽和本以及他们的4个朋友住在一起。一天，本回到家，发现玛丽死在沙发上。他给警察打了电话。侦探来了，意识到玛丽不久前被杀。他审问了所有的4个朋友。
+米娅在厨房里，说她2小时前回家，然后去了厨房。
+约翰正在花园里读一本书。他说那天他没有离开那个地方。
+珍妮弗说她在游泳池里游泳已经3个小时了。
+简在房间里画画。
+侦探要求大家向他展示他们的手，并很快发现有人向他撒了谎，而那个人正是凶手。请问凶手是？</p>
+<div style="text-align: center;">
+<img src="picture2.jpeg" width="300" height="300">
+</div>
+<br/>
+<label><input type="radio" name="answer5" value="0"/>米娅</label>
+<br/>
+<label><input type="radio" name="answer5" value="0"/>约翰</label>
+<br/>
+<label id="5"><input type="radio" name="answer5" value="20"/>珍妮弗</label>
+<br/>
+<label><input type="radio" name="answer5" value="0"/>简</label>
+</fieldset>
+
+<button type="button" onclick="coreCount()" >Cores</button>
+<button type="button" onclick="showWhichWrong()" >correction</button>
+</fieldset>
+
+</form>
+
+
+</body>
+
+</html>
