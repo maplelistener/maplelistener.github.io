@@ -22,7 +22,7 @@
   <body>
     <!-- navbarScrollingDropdown -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background:#1976d2">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand text-white" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Symphonator
       </a>
@@ -34,24 +34,27 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="#">首页 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">商城</a>
+            <a class="nav-link text-white" href="puzzle.html">商城</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">社区</a>
+            <a class="nav-link text-white" href="puzzle.html">社区</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="puzzle.html" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
               游戏资料
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">新手教程</a></li>
-              <li><a class="dropdown-item" href="#">攻略中心</a></li>
+              <li><a class="dropdown-item" href="puzzle.html">新手教程</a></li>
+              <li><a class="dropdown-item" href="puzzle.html">攻略中心</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">开发者基地</a></li>
+              <li><a class="dropdown-item" href="puzzle.html">开发者基地</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="puzzle.html">客户端下载</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
@@ -75,9 +78,9 @@
         <div class="carousel-item active">
           <img src="图2.jpg" class="d-block w-100" alt=" ">
           <div class="carousel-caption d-none d-md-block">
-            <a class="btn btn-primary btn-lg" href="puzzle.html" role="button">下载游戏</a>
             <h5 class="display-4">欢迎来到古典乐的世界！</h5>
             <p>Welcome to the world of classical music!</p>
+            <a class="btn btn-primary btn-lg" href="puzzle.html" role="button">下载游戏</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -97,6 +100,7 @@
       </a>
     </div>
 
+<!--
     <div class="jumbotron">
       <h1 class="display-4">欢迎来到古典乐的世界！</h1>
       <p class="lead">Welcome to the world of classical music!</p>
@@ -104,8 +108,13 @@
       <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 
     </div>
+      -->
 
-    <div class="container">
+    <div>
+      <p1 class="h1">h1. Bootstrap heading</p1>
+    </div>
+
+    <div class="container col-lg-12" style="background-color:#1976d2;">
       <div class="row">
         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0">
           <div class="embed-responsive embed-responsive-16by9">
@@ -115,8 +124,19 @@
           </div>
         </div>
         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0">
+          <ul class="nav nav-tabs bg-light">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">资讯</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">消息</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">通知</a>
+            </li>
+          </ul>
           <div class="list-group">
-            <a href="puzzle.html" class="list-group-item list-group-item-action active" aria-current="true">
+            <a href="puzzle.html" class="list-group-item list-group-item-action" aria-current="true">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">新人物柴可夫斯基上线！</h5>
                 <small>1 days ago</small>
@@ -126,7 +146,7 @@
             </a>
             <a href="puzzle.html" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Symphonator更新新版本啦！</h5>
+                  <h5 class="mb-1">Symphonator出新版本啦！</h5>
                 <small class="text-muted">2 days ago</small>
               </div>
               <p class="mb-1">新版本解锁了更多场景服务，在画面上也有所优化……</p>
@@ -149,40 +169,74 @@
       <p1 class="h1">h1. Bootstrap heading</p1>
     </div>
 
+    <div class="container-fluid">
+      <div class="row jumbotron">
+        <div class="text-center">
+          <div class="col-12">
+            <h1 class="display-4">游戏介绍</h1>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <p class="introduction">这款游戏是一款治愈系模拟经营文化推广游戏,直译即为“交响乐代理人”.玩家在这款游戏中能够触发相关剧情与历史著名古典音乐家成为朋友，邀请他们到家中做客，对自己的家进行装修改建，并获得音乐家们的手稿。
+            在这一过程中，玩家能够享受到好听的古典乐、富有美感和浪漫气息的画面并且去到音乐家们所在的时代，经历音乐家们作曲的那个时代大背景，探索作曲家的每一首曲子背后的故事。</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-2">
+          <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Learn more</button></a>
+      </div>
+    </div>
+
     <div class="row">
        <div class="col-md-4">
-         <div class="card center-align" style="width: auto;">
+         <div class="card" style="width: auto;">
            <img src="图2.jpg" class="card-img-top" alt="...">
            <div class="card-body">
              <h5 class="card-title">Ludwig van Beethoven</h5>
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             <p class="card-text">路德维希·凡·贝多芬 （Ludwig van Beethoven， 1770年12月16日或17日—1827年3月26日），出生于神圣罗马帝国-科隆选侯国的波恩，维也纳古典乐派代表人物之一，欧洲古典主义时期作曲家。</p>
              <a href="https://baike.baidu.com/item/%E8%B7%AF%E5%BE%B7%E7%BB%B4%E5%B8%8C%C2%B7%E5%87%A1%C2%B7%E8%B4%9D%E5%A4%9A%E8%8A%AC/581912?fromtitle=%E8%B4%9D%E5%A4%9A%E8%8A%AC&fromid=137783&fr=aladdin" class="btn btn-primary">Learn more</a>
            </div>
          </div>
        </div>
        <div class="col-md-4">
-         <div class="card center" style="width: auto;">
+         <div class="card" style="width: auto;">
            <img src="图2.jpg" class="card-img-top" alt="...">
            <div class="card-body">
              <h5 class="card-title">Wolfgang Amadeus Mozart</h5>
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             <p class="card-text">沃尔夫冈·阿玛多伊斯·莫扎特（Wolfgang Amadeus Mozart，1756年1月27日—1791年12月5日），出生于奥地利萨尔茨堡，古典主义时期奥地利作曲家，维也纳古典乐派代表人物之一。</p>
              <a href="https://baike.baidu.com/item/%E6%B2%83%E5%B0%94%E5%A4%AB%E5%86%88%C2%B7%E9%98%BF%E7%8E%9B%E5%A4%9A%E4%BC%8A%E6%96%AF%C2%B7%E8%8E%AB%E6%89%8E%E7%89%B9/6129936?fromtitle=%E8%8E%AB%E6%89%8E%E7%89%B9&fromid=159018" class="btn btn-primary">Learn more</a>
            </div>
          </div>
        </div>
        <div class="col-md-4">
-         <div class="card center-align" style="width: auto;">
+         <div class="card" style="width: auto;">
            <img src="图2.jpg" class="card-img-top" alt="...">
            <div class="card-body">
              <h5 class="card-title">Fryderyk Franciszek Chopin</h5>
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             <p class="card-text">弗里德里克·弗朗索瓦·肖邦（F.F.Chopin，1810年3月1日—1849年10月17日），19世纪波兰作曲家、钢琴家。是历史上最具影响力和最受欢迎的钢琴作曲家之一，是波兰音乐史上最重要的人物之一。</p>
              <a href="https://baike.baidu.com/item/%E5%BC%97%E9%87%8C%E5%BE%B7%E9%87%8C%E5%85%8B%C2%B7%E8%82%96%E9%82%A6/292916?fromtitle=%E8%82%96%E9%82%A6&fromid=192387" class="btn btn-primary">Learn more</a>
            </div>
          </div>
        </div>
      </div>
 
-
+     <div>
+       <p1 class="h1">h1. Bootstrap heading</p1>
+     </div>
   </body>
+
+  <footer>
+    <p style="text-align:right;">Posted by: maplelistener</p>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" style="color:white;" href="mailto:1365080111@qq.com">联系我们</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:white;" href="puzzle.html">招纳贤士</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:white;" href="puzzle.html">广告服务</a>
+      </li>
+    </ul>
+    <p1 class="h1">h1. Bootstrap heading</p1>
+  </footer>
 
 </html>
